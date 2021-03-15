@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: #515151;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.content {
+    background-image: url(dell-gaming.jpg);
+    width: 90%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: content-box;
+    padding: 10px 0 0;
+    box-shadow: 3px 2px 8px 10px #0c0c0cb2;
+    border-radius: 6px;
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    animation: drop 2s;
+    font-weight: 700;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+
+    }
+}
+
+.logo {
+    background: url(Dell_Logo.svg);
+    width: 70px;
+    height: 70px;
+}
+
+.active {
+    cursor: pointer;
+}
+
+.exp {
+    position: relative;
+    width: 245px;
+    height: 40px;
+    top: 15%;
+    left: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+
+.exp .black, .exp .order{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.exp .black {
+    background: rgb(20, 20, 20);
+    margin: 0 20px 0 0;
+}
+.exp .order {
+    background: #fafafa;
+    color: #333;
+    margin: 0 0 0 20px;
+}
+
+.get {
+    position: absolute;
+    width: 300px;
+    height: 15vh;
+    bottom: 25%;
+    left: 20%;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.socials {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 4%;
+    right: 6%;
+}
+.socials img {
+    margin: 1rem;
+}
+
+.copy {
+    position: absolute;
+    bottom: 5%;
+    left: 47%;
+    font-size: 14px;
+    font-weight: bold;
+}
